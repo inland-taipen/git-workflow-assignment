@@ -1,0 +1,67 @@
+================================================================================
+GIT COMMANDS DOCUMENTATION - ASSIGNMENT WORKFLOW
+Course / Module: Version Control & Testing
+Author: Anika Tripathi
+Repository: https://github.com/inland-taipen/git-workflow-assignment
+================================================================================
+
+1. git init -b main
+   Initializes a new Git repository locally with the default branch named 'main'.
+
+2. git add index.html about.html
+   Stages the initial HTML files into Git's index to prepare them for tracking.
+
+3. git commit -m "Initial commit: Add index.html and about.html"
+   Records the staged initial files into the repository history with a descriptive message.
+
+4. git status
+   Displays the working directory and staging area status, showing modified, untracked, or staged files.
+
+5. git add index.html
+   Stages modified index.html content to prepare it for inclusion in the second commit.
+
+6. git commit -m "Update index.html with hero section and footer"
+   Creates a second commit on the main branch capturing additions to the homepage structure.
+
+7. git branch feature
+   Creates a new isolated branch named 'feature' branching off from the current commit.
+
+8. git checkout feature
+   Switches the working directory HEAD to the 'feature' branch to develop in isolation.
+
+9. git add about.html
+   Stages modifications made to about.html within the 'feature' branch.
+
+10. git commit -m "feat: Add team members section to about.html"
+    Commits feature additions to the 'feature' branch history without impacting main.
+
+11. git checkout main
+    Switches the active branch back to the primary 'main' branch.
+
+12. git merge feature --no-ff -m "Merge branch 'feature' into main"
+    Merges changes from the 'feature' branch into 'main' with an explicit merge commit preserving history topology.
+
+13. git log --graph --all --pretty=format:'%h - %d %s (%cr) <%an>'
+    Renders an ASCII graph of all commits and branch convergence across the entire repository.
+
+14. git status --ignored
+    Lists ignored files alongside untracked files to verify that .gitignore patterns (*.log, temp/) work correctly.
+
+15. git add .gitignore
+    Stages the .gitignore configuration file so ignore patterns are tracked and shared.
+
+16. git commit -m "Add .gitignore to ignore log files and temp directory"
+    Commits the .gitignore rule file into version control.
+
+17. git reset HEAD~1
+    Undoes the most recent commit by moving HEAD back one commit while preserving working tree changes.
+
+18. git remote add origin https://github.com/inland-taipen/git-workflow-assignment.git
+    Associates the local repository with the remote GitHub repository under the shorthand alias 'origin'.
+
+19. git push -u origin main
+    Pushes the local 'main' branch commits to GitHub and binds upstream tracking.
+
+20. git push origin feature
+    Pushes the 'feature' branch to GitHub so branching history is fully verifiable on the remote.
+================================================================================
