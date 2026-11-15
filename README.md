@@ -3,6 +3,7 @@
 This repository contains the practical implementation of **Question 1: Git & GitHub Workflow** for the Software Engineering / DevOps Assignment.
 
 **Repository URL:** [https://github.com/inland-taipen/git-workflow-assignment](https://github.com/inland-taipen/git-workflow-assignment)  
+**Institution:** BITS Pilani  
 **Author:** Anika Tripathi  
 **Roll No:** 2024eb02496  
 

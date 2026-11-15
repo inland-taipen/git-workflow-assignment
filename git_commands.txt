@@ -1,6 +1,7 @@
 ================================================================================
 GIT COMMANDS DOCUMENTATION - ASSIGNMENT WORKFLOW
 Course / Module: Version Control & Testing
+Institution: BITS Pilani
 Author: Anika Tripathi
 Roll No: 2024eb02496
 Repository: https://github.com/inland-taipen/git-workflow-assignment
